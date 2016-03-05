@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <TextView
+                    android:text="タイトル"
+                    android:id="@+id/Title"/>
+
+                <EditText
+                    android:layout_marginLeft="20px"
+                    android:id="@+id/EditTitle"
+                    android:inputType="textAutoComplete"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="ユーザーID"
+                    android:id="@+id/UserID"/>
+
+                <EditText
+                    android:layout_marginLeft="20px"
+                    android:id="@+id/EditID"
+                    android:inputType="textWebEditText"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:text="パスワード"
+                    android:id="@+id/PassWord"/>
+
+                <EditText
+                    android:layout_marginLeft="20px"
+                    android:id="@+id/EditPass"
+                    android:inputType="textVisiblePassword"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/PWlength"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SeekBar"
+        android:max="30"
+        android:progress="8"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="数字"
+            android:id="@+id/Number"/>
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="大文字"
+            android:id="@+id/Upper"/>
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="小文字"
+            android:id="@+id/Lower"/>
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="記号"
+            android:id="@+id/Symbol"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/NumBotton"/>
+
+        <ToggleButton
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/UpperButton"/>
+
+        <ToggleButton
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/LowerButton"/>
+
+        <ToggleButton
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/SymbolButton"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="保存"
+            android:id="@+id/SaveButton"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="パスワード生成"
+            android:id="@+id/CreateButton"/>
+
+    </LinearLayout>
+
+</LinearLayout>
